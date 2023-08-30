@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require('mongoose')
 const cors = require('cors');
 const port = process.env.PORT || '5000';
+const hostname= '0.0.0.0'
 const rProducts = require('./routers/product')
 const rUser = require('./routers/users')
 const rAuth = require('./routers/auth')
@@ -31,4 +32,4 @@ app.use(rAuth);
 
 
 
-app.listen(port, () => console.log(`Server ${port} da ishladi`))   
+app.listen(port,hostname, () => console.log(`Server ${port} da ishladi`))   
