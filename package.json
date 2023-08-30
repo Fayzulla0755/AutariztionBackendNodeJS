@@ -4,7 +4,8 @@
   "description": "sopping",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "bluid": " app.js build"
   },
   "keywords": [
     "mongo",
