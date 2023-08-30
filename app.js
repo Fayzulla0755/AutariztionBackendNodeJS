@@ -13,7 +13,7 @@ const rAuth = require('./routers/auth')
 
 // Mongoodb conecting
 mongoose.set('strictQuery', false);
-mongoose.connect('mongodb://localhost:27017/shoppingdb');
+mongoose.connect('mongodb+srv://qurbonxojayevfayzullaxoja:oqPZDRCSTHNK0T7z@users.nl7eatz.mongodb.net/');
 const db = mongoose.connection;
 db.on('open', () => console.log("Mongodb ishladi"));
 db.on('error', (err) => console.log(err));
